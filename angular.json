@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-wordgame": {
+    "angular-flashcard-creator": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-wordgame",
+            "outputPath": "dist/angular-flashcard-creator",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-wordgame:build:production"
+              "browserTarget": "angular-flashcard-creator:build:production"
             },
             "development": {
-              "browserTarget": "angular-wordgame:build:development"
+              "browserTarget": "angular-flashcard-creator:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-wordgame:build"
+            "browserTarget": "angular-flashcard-creator:build"
           }
         },
         "test": {
