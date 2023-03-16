@@ -1,0 +1,11 @@
+<div *ngFor="let card of deck">
+<h1 class="text-primary-800 text-4xl mb-4">Deck no. {{deckId}}</h1>
+    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2" >{{card.title}}</div>
+            <p class="text-gray-700 text-base">
+            {{card.text}}
+            </p>
+        </div>
+    </div>
+</div>

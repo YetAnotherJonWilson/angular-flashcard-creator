@@ -1,0 +1,15 @@
+<h1 class="text-primary-800 text-4xl mb-4"> View Decks</h1>
+<div *ngIf="decks.length">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white" *ngFor="let deck of decks">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2" >{{deck.title}}</div>
+            <p class="text-gray-700 text-base mb-2">
+            {{deck.desc}}
+            </p>
+            <div class="flex justify-end text-primary-800 hover:text-primary-600"><a [routerLink]="['/deck', deck.deckId]" >Open</a></div>
+        </div>
+    </div>
+</div>
+<div *ngIf="decks.length === 0">
+    <p>Loading Decks</p>
+</div>
